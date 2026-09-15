@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - Đinh Thị Thảo Duyên</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #eaf4ff, #f7f9fc);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 30px 15px;
+      color: #1f2d3d;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 900px;
+      background: #ffffff;
+      border: 1px solid #dfeaf7;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(41, 86, 146, 0.12);
+      overflow: hidden;
+    }
+
+    .top {
+      background: linear-gradient(90deg, #f2f7ff, #e4f1ff);
+      padding: 25px 30px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #dfeaf7;
+    }
+
+    .header-text {
+      flex: 1;
+    }
+
+    .header-text h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #1e3a5f;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .header-text p {
+      font-size: 0.95rem;
+      color: #4a647f;
+      font-weight: 600;
+    }
+
+    .avatar {
+      width: 95px;
+      height: 95px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #a9d3ff, #5d8ed9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 1.8rem;
+      font-weight: 700;
+      border: 4px solid #fff;
+      box-shadow: 0 8px 18px rgba(93, 142, 217, 0.25);
+      margin-left: 20px;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding: 12px 20px 0;
+      background: #f8fbff;
+    }
+
+    .tabs a {
+      text-decoration: none;
+      color: #2c4b6c;
+      background: #edf5ff;
+      padding: 8px 18px;
+      border-radius: 8px 8px 0 0;
+      font-size: 0.92rem;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .tabs a:hover {
+      background: #dfeeff;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      padding: 20px 25px 25px;
+      background: #ffffff;
+    }
+
+    .card {
+      background: #f9fbff;
+      border: 1px solid #e1ecfb;
+      border-radius: 12px;
+      padding: 18px 16px;
+      min-height: 220px;
+    }
+
+    .card h3 {
+      color: #1d4a7a;
+      font-size: 1.3rem;
+      margin-bottom: 14px;
+      text-align: center;
+      border-bottom: 2px solid #dfeeff;
+      padding-bottom: 8px;
+    }
+
+    .card p,
+    .card li {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: #354b62;
+    }
+
+    .card ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .card li {
+      margin-bottom: 8px;
+      position: relative;
+      padding-left: 18px;
+    }
+
+    .card li::before {
+      content: "•";
+      color: #2e7de1;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+    }
+
+    .contact p {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 18px 20px 22px;
+      background: #f5f9ff;
+      color: #61748a;
+      font-size: 0.9rem;
+      border-top: 1px solid #dfeaf7;
+    }
+
+    @media (max-width: 760px) {
+      .top {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .avatar {
+        margin: 15px 0 0;
+      }
+
+      .content {
+        grid-template-columns: 1fr;
+      }
+
+      .header-text h1 {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="top">
+      <div class="header-text">
+        <h1>HỌ VÀ TÊN SINH VIÊN</h1>
+        <p>Sinh viên CNTT - Kỹ thuật CNTT 01</p>
+      </div>
+      <div class="avatar">DT</div>
+    </header>
+
+    <nav class="tabs">
+      <a href="#">Giới thiệu</a>
+      <a href="#">Kỹ năng</a>
+      <a href="#">Liên hệ</a>
+    </nav>
+
+    <section class="content">
+      <div class="card">
+        <h3>Giới thiệu</h3>
+        <p>
+          Tôi là Đinh Thị Thảo Duyên, sinh viên năm 2 ngành Công nghệ Thông tin,
+          trường Đại học Thủy Lợi. Tôi đam mê học tập và đang cố gắng phát triển
+          kỹ năng lập trình web và thiết kế giao diện.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Kỹ năng</h3>
+        <ul>
+          <li>HTML5, CSS3</li>
+          <li>JavaScript cơ bản</li>
+          <li>Git và GitHub</li>
+          <li>UI/UX cơ bản</li>
+          <li>Photoshop và Canva</li>
+        </ul>
+      </div>
+
+      <div class="card contact">
+        <h3>Liên hệ</h3>
+        <p><strong>Địa chỉ:</strong> Hà Nội</p>
+        <p><strong>Email:</strong> thdauduyen@gmail.com</p>
+        <p><strong>Điện thoại:</strong> 0123 456 789</p>
+      </div>
+    </section>
+
+    <footer>
+      © 2024 - Đinh Thị Thảo Duyên. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
