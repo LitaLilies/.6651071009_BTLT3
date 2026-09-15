@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #efefef;
+  color: #333;
+  line-height: 1.5;
+}
+
+.container {
+  width: 1100px;
+  max-width: 96%;
+  margin: 30px auto;
+  background: #fff;
+  border: 1px solid #d8dfe8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.topbar {
+  background: #1c1c1c;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 14px;
+  font-size: 12px;
+}
+
+.topbar .icons {
+  letter-spacing: 2px;
+}
+
+.content {
+  padding: 18px 20px 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: #173d63;
+  margin: 0;
+}
+
+.header .badge {
+  background: #f3f8ff;
+  color: #1f4f80;
+  border: 1px solid #d0e1f6;
+  border-radius: 20px;
+  padding: 7px 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.main-box {
+  border: 1px solid #dfe7ef;
+  border-radius: 10px;
+  background: #f8fbff;
+  padding: 18px;
+}
+
+.section {
+  border: 1px solid #dfe7ef;
+  background: #fff;
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+}
+
+.section h3 {
+  font-size: 1.1rem;
+  color: #1a3d5e;
+  margin-bottom: 12px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 18px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field label {
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: #2c4057;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  border: 1px solid #cfd8e4;
+  border-radius: 6px;
+  padding: 9px 10px;
+  font-size: 0.95rem;
+  background: #fff;
+}
+
+textarea {
+  min-height: 86px;
+  resize: vertical;
+}
+
+.inline {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 0.95rem;
+  color: #354a5f;
+}
+
+.inline label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.btn {
+  background: #f57c00;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (max-width: 760px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

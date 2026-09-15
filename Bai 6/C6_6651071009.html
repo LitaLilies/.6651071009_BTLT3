@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Đặt vé máy bay</title>
+	<link rel="stylesheet" href="C6_6651071009.css" />
+</head>
+<body>
+	<div class="container">
+		<div class="topbar">
+			<div>VietAir</div>
+			<div class="icons">◉ ◌ ◍</div>
+		</div>
+
+		<div class="content">
+			<div class="header">
+				<h1>Đặt vé máy bay</h1>
+				<span class="badge">Khách hàng ưu tiên</span>
+			</div>
+
+			<div class="main-box">
+				<form action="#" method="post">
+					<div class="section">
+						<h3>Phần 1 – Thông tin chuyến bay</h3>
+						<div class="grid">
+							<div class="field">
+								<label>Điểm đi</label>
+								<input type="text" name="diemdi" placeholder="Hà Nội" />
+							</div>
+							<div class="field">
+								<label>Điểm đến</label>
+								<input type="text" name="diemden" placeholder="Đà Nẵng" />
+							</div>
+							<div class="field">
+								<label>Ngày đi</label>
+								<input type="date" name="ngaydi" />
+							</div>
+							<div class="field">
+								<label>Ngày về</label>
+								<input type="date" name="ngayve" />
+							</div>
+						</div>
+					</div>
+
+					<div class="section">
+						<h3>Phần 2 – Thông tin hành khách</h3>
+						<div class="grid">
+							<div class="field">
+								<label>Họ và tên</label>
+								<input type="text" name="hoten" placeholder="Nguyễn Văn A" />
+							</div>
+							<div class="field">
+								<label>Số CMND/Passport</label>
+								<input type="text" name="cmnd" placeholder="123456789" />
+							</div>
+							<div class="field">
+								<label>Giới tính</label>
+								<div class="inline">
+									<label><input type="radio" name="gioitinh" value="Nam" checked /> Nam</label>
+									<label><input type="radio" name="gioitinh" value="Nữ" /> Nữ</label>
+								</div>
+							</div>
+							<div class="field">
+								<label>Tuổi</label>
+								<input type="number" name="tuoi" min="1" max="120" />
+							</div>
+						</div>
+					</div>
+
+					<div class="section">
+						<h3>Phần 3 – Kết quả</h3>
+						<div class="field">
+							<label>Thông tin vé</label>
+							<textarea name="ketqua" placeholder="Kết quả đặt chỗ sẽ hiển thị ở đây..."></textarea>
+						</div>
+					</div>
+
+					<div class="section">
+						<h3>Phần 4 – Bảo mật</h3>
+						<div class="field">
+							<label>Hình thức thanh toán</label>
+							<div class="inline">
+								<label><input type="radio" name="thanhtoan" value="visa" checked /> Visa</label>
+								<label><input type="radio" name="thanhtoan" value="mastercard" /> Mastercard</label>
+								<label><input type="radio" name="thanhtoan" value="bank" /> Chuyển khoản</label>
+							</div>
+						</div>
+						<div class="field" style="margin-top: 12px;">
+							<label>Email nhận xác nhận</label>
+							<input type="email" name="email" placeholder="example@gmail.com" />
+						</div>
+					</div>
+
+					<div class="actions">
+						<button type="submit" class="btn">Đặt vé</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
