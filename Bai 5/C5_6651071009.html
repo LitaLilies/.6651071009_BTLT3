@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Đăng ký khóa học</title>
+	<link rel="stylesheet" href="C5_6651071009.css" />
+</head>
+<body>
+	<div class="page">
+		<div class="topbar">
+			<div>Đăng ký thành viên</div>
+			<div class="icons">◉ ◌ ◍</div>
+		</div>
+
+		<div class="panel">
+			<div class="title">Đăng ký tài khoản mới</div>
+
+			<div class="form-wrap">
+				<form action="#" method="post">
+					<div class="form-grid">
+						<div class="field">
+							<label>Họ và tên</label>
+							<input type="text" name="hoten" placeholder="Nhập họ tên" />
+						</div>
+
+						<div class="field">
+							<label>Ngày sinh</label>
+							<input type="date" name="ngaysinh" />
+						</div>
+
+						<div class="field">
+							<label>Giới tính</label>
+							<div class="inline">
+								<label><input type="radio" name="gioitinh" value="Nam" checked /> Nam</label>
+								<label><input type="radio" name="gioitinh" value="Nữ" /> Nữ</label>
+							</div>
+						</div>
+
+						<div class="field">
+							<label>Số điện thoại</label>
+							<input type="tel" name="sdt" placeholder="0987 654 321" />
+						</div>
+
+						<div class="field">
+							<label>Email</label>
+							<input type="email" name="email" placeholder="example@gmail.com" />
+						</div>
+
+						<div class="field">
+							<label>Địa chỉ</label>
+							<input type="text" name="diachi" placeholder="Nhập địa chỉ" />
+						</div>
+
+						<div class="field">
+							<label>Tỉnh thành</label>
+							<select name="tinhthanh">
+								<option value="">-- Chọn tỉnh --</option>
+								<option>Hà Nội</option>
+								<option>Đà Nẵng</option>
+								<option>Hồ Chí Minh</option>
+							</select>
+						</div>
+
+						<div class="field">
+							<label>Khóa học</label>
+							<select name="khoahoc">
+								<option value="">-- Chọn khóa học --</option>
+								<option>HTML/CSS</option>
+								<option>JavaScript</option>
+								<option>PHP</option>
+							</select>
+						</div>
+
+						<div class="field" style="grid-column: 1 / -1;">
+							<label>Ghi chú</label>
+							<textarea name="ghichu" placeholder="Viết ghi chú ..."></textarea>
+						</div>
+					</div>
+
+					<div class="actions">
+						<button type="submit" class="btn primary">Đăng ký</button>
+						<button type="reset" class="btn secondary">Nhập lại</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
